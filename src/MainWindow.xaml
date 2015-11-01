@@ -1,0 +1,87 @@
+﻿<Window x:Class="ClashLogger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="600">
+    <Window.Resources>
+        <Style x:Key="listBoxStyle" TargetType="ListBox">
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="SelectionMode" Value="Extended"/>
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden" />
+        </Style>
+        <Style x:Key="SquareButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Width" Value="20" />
+            <Setter Property="Height" Value="20" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid Margin="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="32" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <GroupBox Grid.Column="0" Header="Reports" Margin="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <ListBox Grid.Column="0" Name ="reportsListBox" 
+                                 ItemsSource="{Binding}" 
+                                 Style="{StaticResource listBoxStyle}">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Label Content="{Binding Name}" />
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
+                            <Button Name="addReportButton" Style="{StaticResource SquareButtonStyle}" Content="+" Click="addReport_Click"/>
+                            <Button Name="removeReportButton" Style="{StaticResource SquareButtonStyle}" Content="-" Click="removeReport_Click" />
+                        </StackPanel>
+                    </Grid>
+                </GroupBox>
+                <GroupBox Grid.Column="1" Header="Parameters" Margin="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <ListBox Grid.Column="0" Name ="LeftParamListBox" 
+                                 ItemsSource="{Binding}" 
+                                 Style="{StaticResource listBoxStyle}">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Label Content="{Binding Name}" />
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
+                            <Button Name="addParamButton" Style="{StaticResource SquareButtonStyle}" Content=">" Click="addParam_Click"/>
+                            <Button Name="removeParamButton" Style="{StaticResource SquareButtonStyle}" Content="-" Click="removeParam_Click" />
+                        </StackPanel>
+                        <ListBox Grid.Column="2" Name ="RightParamListBox" 
+                                 ItemsSource="{Binding}" 
+                                 Style="{StaticResource listBoxStyle}">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Label Content="{Binding Name}" />
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </Grid>
+                </GroupBox>
+            </Grid>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                <Button Content="Ok_Button" IsDefault="True" Name="Ok_Button" Width="88" Height="22" Click="Ok_Button_Click"/>
+                <Button Content="Cancel_Button" IsCancel="True" Name="Cancel_Button" Width="88" Height="22" Click="Cancel_Button_Click"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

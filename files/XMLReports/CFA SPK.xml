@@ -1,0 +1,1686 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<exchange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" units="m" filename="" filepath="">
+  <batchtest name="Report" internal_name="Report" units="m">
+    <clashtests>
+      <clashtest name="CFA SPK" test_type="hard" status="old" tolerance="0.010" merge_composites="1">
+        <linkage mode="none"/>
+        <left>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/MEP/CFA</locator>
+          </clashselection>
+        </left>
+        <right>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/MEP/SPK</locator>
+          </clashselection>
+        </right>
+        <rules/>
+        <summary total="11" new="0" active="0" reviewed="11" approved="0" resolved="0">
+          <testtype>Hard</testtype>
+          <teststatus>Old</teststatus>
+        </summary>
+        <clashresults>
+          <clashgroup name="Canalisation" guid="0c76f51a-a07d-4c76-8611-a812f92ce119" status="reviewed" distance="-0.016">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1619.336" y="-479.803" z="-3.240"/>
+            </clashpoint>
+            <gridlocation>AE 14-AE C : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>1758410</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_55_CFA_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Raccords de chemins de câbles</node>
+                  <node>Chemin de cables - Te</node>
+                  <node>CDC_CFA_VDI_ROC1</node>
+                  <node>Chemin de cables - Te</node>
+                  <node>CDC_CFA_VDI_ROC1</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>CDC_CFA_VDI_ROC1</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Raccords de chemins de câbles</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>1533120</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Canalisation</node>
+                  <node>Canalisation</node>
+                  <node>INGP_Acier</node>
+                  <node>Canalisation</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Canalisation</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Canalisation: Canalisation: INGP_Acier</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit19" guid="00a2f724-b6d8-4dd1-8696-4ddcef0836a3" status="reviewed" distance="-0.016">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1619.336" y="-479.803" z="-3.240"/>
+                </clashpoint>
+                <gridlocation>AE 14-AE C : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>1758410</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_55_CFA_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Raccords de chemins de câbles</node>
+                      <node>Chemin de cables - Te</node>
+                      <node>CDC_CFA_VDI_ROC1</node>
+                      <node>Chemin de cables - Te</node>
+                      <node>CDC_CFA_VDI_ROC1</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>CDC_CFA_VDI_ROC1</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Raccords de chemins de câbles</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>1533120</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Valve butterfly à volant" guid="ddbb3cd6-6b4a-4410-8c0c-4d8e60a01922" status="reviewed" distance="-0.015">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1549.805" y="-465.920" z="-2.323"/>
+            </clashpoint>
+            <gridlocation>AE 10-AE J : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>2690249</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_55_CFA_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_SSI</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_SSI</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>4117307</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Accessoire de canalisation</node>
+                  <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                  <node>LCS-6822-5_8&quot;</node>
+                  <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                  <node>LCS-6822-5_8&quot;</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>LCS-6822-5_8&quot;</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Accessoire de canalisation</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit23" guid="b0d43650-f442-4e5e-acd7-7a8763a1e54c" status="reviewed" distance="-0.015">
+                <parentgroup>Valve butterfly à volant</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1549.805" y="-465.920" z="-2.323"/>
+                </clashpoint>
+                <gridlocation>AE 10-AE J : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>2690249</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_55_CFA_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_SSI</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_SSI</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>4117307</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Accessoire de canalisation</node>
+                      <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                      <node>LCS-6822-5_8&quot;</node>
+                      <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                      <node>LCS-6822-5_8&quot;</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>LCS-6822-5_8&quot;</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Accessoire de canalisation</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Valve butterfly à volant" guid="e79ffa63-ed0f-437c-889c-e40f497fedf7" status="reviewed" distance="-0.013">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1552.868" y="-465.950" z="-2.336"/>
+            </clashpoint>
+            <gridlocation>AE 10-AE J : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>2690249</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_55_CFA_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_SSI</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_SSI</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>4117310</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Accessoire de canalisation</node>
+                  <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                  <node>LCS-6822-5_8&quot;</node>
+                  <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                  <node>LCS-6822-5_8&quot;</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>LCS-6822-5_8&quot;</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Accessoire de canalisation</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit25" guid="eb5812db-e547-4f0f-a265-733aa7f964dc" status="reviewed" distance="-0.013">
+                <parentgroup>Valve butterfly à volant</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1552.868" y="-465.950" z="-2.336"/>
+                </clashpoint>
+                <gridlocation>AE 10-AE J : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>2690249</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_55_CFA_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_SSI</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_SSI</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>4117310</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Accessoire de canalisation</node>
+                      <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                      <node>LCS-6822-5_8&quot;</node>
+                      <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                      <node>LCS-6822-5_8&quot;</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>LCS-6822-5_8&quot;</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Accessoire de canalisation</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Canalisation" guid="97e614b6-4ef9-41f5-a57c-dac138dd2ccb" status="reviewed" distance="-0.029">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1536.209" y="-480.440" z="-2.994"/>
+            </clashpoint>
+            <gridlocation>AE 09-AE B : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="17" hour="7" minute="30" second="43"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>3423692</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_55_CFA_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_CFA_VDI_ROC1</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFA_VDI_ROC1</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>4555528</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Canalisation</node>
+                  <node>Canalisation</node>
+                  <node>INGP_Acier</node>
+                  <node>Canalisation</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Canalisation</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Canalisation: Canalisation: INGP_Acier</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit12" guid="83b82127-b1b9-48de-be89-3bf5bfeabe33" status="reviewed" distance="-0.029">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1536.209" y="-480.440" z="-2.994"/>
+                </clashpoint>
+                <gridlocation>AE 09-AE B : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="17" hour="7" minute="30" second="43"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>3423692</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_55_CFA_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_CFA_VDI_ROC1</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFA_VDI_ROC1</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>4555528</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+              <clashresult name="Conflit15" guid="e204d31c-f13b-48f0-8ce0-f8b1f2c602ef" status="reviewed" distance="-0.026">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1536.206" y="-480.486" z="-2.936"/>
+                </clashpoint>
+                <gridlocation>AE 09-AE B : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="17" hour="7" minute="30" second="43"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>3423674</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_55_CFA_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_CFA_VDI_ROC2</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFA_VDI_ROC2</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>4555528</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Valve butterfly à volant" guid="a4459ec8-70ec-4a03-9653-924ce5e857a5" status="reviewed" distance="-0.015">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1466.871" y="-465.920" z="-2.323"/>
+            </clashpoint>
+            <gridlocation>AE 06-AE J : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>1829916</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_55_CFA_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_SSI</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_SSI</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>3692693</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Accessoire de canalisation</node>
+                  <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                  <node>LCS-6822-5_8&quot;</node>
+                  <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                  <node>LCS-6822-5_8&quot;</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>LCS-6822-5_8&quot;</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Accessoire de canalisation</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit21" guid="d4677f4a-c542-49aa-94c9-50a473cc779d" status="reviewed" distance="-0.015">
+                <parentgroup>Valve butterfly à volant</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1466.871" y="-465.920" z="-2.323"/>
+                </clashpoint>
+                <gridlocation>AE 06-AE J : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>1829916</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_55_CFA_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_SSI</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_SSI</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>3692693</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Accessoire de canalisation</node>
+                      <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                      <node>LCS-6822-5_8&quot;</node>
+                      <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                      <node>LCS-6822-5_8&quot;</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>LCS-6822-5_8&quot;</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Accessoire de canalisation</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Valve butterfly à volant" guid="46f45c88-b1f4-4837-b71f-6c412ae7e743" status="reviewed" distance="-0.015">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1469.271" y="-465.920" z="-2.323"/>
+            </clashpoint>
+            <gridlocation>AE 06-AE J : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>1829916</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_55_CFA_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_SSI</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_SSI</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>3692463</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Accessoire de canalisation</node>
+                  <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                  <node>LCS-6822-5_8&quot;</node>
+                  <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                  <node>LCS-6822-5_8&quot;</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>LCS-6822-5_8&quot;</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Accessoire de canalisation</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit22" guid="13a10eef-62b5-47bd-8d30-672060db6e6b" status="reviewed" distance="-0.015">
+                <parentgroup>Valve butterfly à volant</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1469.271" y="-465.920" z="-2.323"/>
+                </clashpoint>
+                <gridlocation>AE 06-AE J : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>1829916</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_55_CFA_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_SSI</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_SSI</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>3692463</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Accessoire de canalisation</node>
+                      <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                      <node>LCS-6822-5_8&quot;</node>
+                      <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                      <node>LCS-6822-5_8&quot;</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>LCS-6822-5_8&quot;</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Accessoire de canalisation</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Valve butterfly à volant" guid="5531336e-7001-42b6-8afc-c5ef4dd18798" status="reviewed" distance="-0.015">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1470.505" y="-465.920" z="-2.323"/>
+            </clashpoint>
+            <gridlocation>AE 06-AE J : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>1829916</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_55_CFA_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_SSI</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_SSI</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>3290931</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Accessoire de canalisation</node>
+                  <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                  <node>LCS-6822-5_8&quot;</node>
+                  <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                  <node>LCS-6822-5_8&quot;</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>LCS-6822-5_8&quot;</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Accessoire de canalisation</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit24" guid="f7ac7ce3-1a64-4582-a402-d9add4a9737b" status="reviewed" distance="-0.015">
+                <parentgroup>Valve butterfly à volant</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1470.505" y="-465.920" z="-2.323"/>
+                </clashpoint>
+                <gridlocation>AE 06-AE J : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>1829916</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_55_CFA_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_SSI</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_SSI</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>3290931</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Accessoire de canalisation</node>
+                      <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                      <node>LCS-6822-5_8&quot;</node>
+                      <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                      <node>LCS-6822-5_8&quot;</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>LCS-6822-5_8&quot;</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Accessoire de canalisation</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Valve butterfly à volant" guid="28790ab2-363f-4d2b-aa33-3f175ef64500" status="reviewed" distance="-0.013">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1473.575" y="-465.933" z="-2.336"/>
+            </clashpoint>
+            <gridlocation>AE 06-AE J : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>1829916</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_55_CFA_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_SSI</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_SSI</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>3290934</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Accessoire de canalisation</node>
+                  <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                  <node>LCS-6822-5_8&quot;</node>
+                  <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                  <node>LCS-6822-5_8&quot;</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>LCS-6822-5_8&quot;</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Accessoire de canalisation</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit26" guid="23fdb04f-ca54-4f48-bcd5-f2b3913eba03" status="reviewed" distance="-0.013">
+                <parentgroup>Valve butterfly à volant</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1473.575" y="-465.933" z="-2.336"/>
+                </clashpoint>
+                <gridlocation>AE 06-AE J : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>1829916</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_55_CFA_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_SSI</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_SSI</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>3290934</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Accessoire de canalisation</node>
+                      <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                      <node>LCS-6822-5_8&quot;</node>
+                      <node>ING-Valve-Butterfly-Nibco-a volant</node>
+                      <node>LCS-6822-5_8&quot;</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>LCS-6822-5_8&quot;</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Accessoire de canalisation</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Canalisation" guid="fc310aeb-b41f-4dba-9c79-0d711a65ecca" status="reviewed" distance="-0.012">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1456.256" y="-480.391" z="-2.803"/>
+            </clashpoint>
+            <gridlocation>AE 05-AE B : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>2342498</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_55_CFA_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_CFA_VDI_ROC2</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFA_VDI_ROC2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>4548920</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Canalisation</node>
+                  <node>Canalisation</node>
+                  <node>INGP_Acier</node>
+                  <node>Canalisation</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Canalisation</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Canalisation: Canalisation: INGP_Acier</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit27" guid="89d97ae9-fbaf-4924-bc94-13228254c84d" status="reviewed" distance="-0.012">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1456.256" y="-480.391" z="-2.803"/>
+                </clashpoint>
+                <gridlocation>AE 05-AE B : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>2342498</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_55_CFA_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_CFA_VDI_ROC2</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFA_VDI_ROC2</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>4548920</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+              <clashresult name="Conflit28" guid="8f7e0710-6e8c-4c43-b1a7-9fdcb58d8fc0" status="reviewed" distance="-0.011">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1455.862" y="-480.384" z="-2.801"/>
+                </clashpoint>
+                <gridlocation>AE 05-AE B : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>2157037</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_55_CFA_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_CFA_VDI_ROC1</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFA_VDI_ROC1</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>4548920</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Canalisation" guid="3a9e0d3d-1622-4d36-99e6-8f8640a5a32d" status="reviewed" distance="-0.022">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1379.712" y="-490.188" z="-1.951"/>
+            </clashpoint>
+            <gridlocation>AE 02-AE Z : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>3310696</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_55_CFA_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_CFA_VDI_ROC2</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFA_VDI_ROC2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>2020634</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Canalisation</node>
+                  <node>Canalisation</node>
+                  <node>INGP_Acier</node>
+                  <node>Canalisation</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Canalisation</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Canalisation: Canalisation: INGP_Acier</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit14" guid="877f05d0-cf38-4834-886b-4f75fb995b55" status="reviewed" distance="-0.022">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1379.712" y="-490.188" z="-1.951"/>
+                </clashpoint>
+                <gridlocation>AE 02-AE Z : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>3310696</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_55_CFA_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_CFA_VDI_ROC2</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFA_VDI_ROC2</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>2020634</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Canalisation" guid="a4885217-455e-4abb-8cab-f19a74fb54d8" status="reviewed" distance="-0.035">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1390.872" y="-473.021" z="-5.428"/>
+            </clashpoint>
+            <gridlocation>AE 02-AE D : 85 - NIVEAU LT</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>3394254</value>
+                </objectattribute>
+                <layer>90 - NIVEAU -2.0</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_55_CFA_INFRA.nwc</node>
+                  <node>90 - NIVEAU -2.0</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_CFA_VDI_ROC1</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFA_VDI_ROC1</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>4185546</value>
+                </objectattribute>
+                <layer>90 - NIVEAU -2.0</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>90 - NIVEAU -2.0</node>
+                  <node>Canalisation</node>
+                  <node>Canalisation</node>
+                  <node>INGP_Acier</node>
+                  <node>Canalisation</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Canalisation</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Canalisation: Canalisation: INGP_Acier</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit13" guid="96536a96-b997-433b-a17f-09f67d1dfa38" status="reviewed" distance="-0.035">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1390.872" y="-473.021" z="-5.428"/>
+                </clashpoint>
+                <gridlocation>AE 02-AE D : 85 - NIVEAU LT</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="40"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>3394254</value>
+                    </objectattribute>
+                    <layer>90 - NIVEAU -2.0</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_55_CFA_INFRA.nwc</node>
+                      <node>90 - NIVEAU -2.0</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_CFA_VDI_ROC1</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFA_VDI_ROC1</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>4185546</value>
+                    </objectattribute>
+                    <layer>90 - NIVEAU -2.0</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>90 - NIVEAU -2.0</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+        </clashresults>
+      </clashtest>
+    </clashtests>
+    <selectionsets/>
+  </batchtest>
+</exchange>

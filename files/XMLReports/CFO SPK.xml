@@ -1,0 +1,2025 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<exchange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" units="m" filename="" filepath="">
+  <batchtest name="Report" internal_name="Report" units="m">
+    <clashtests>
+      <clashtest name="CFO SPK" test_type="hard" status="old" tolerance="0.010" merge_composites="1">
+        <linkage mode="none"/>
+        <left>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/MEP/CFO</locator>
+          </clashselection>
+        </left>
+        <right>
+          <clashselection selfintersect="0" primtypes="1">
+            <locator>lcop_selection_set_tree/MEP/SPK</locator>
+          </clashselection>
+        </right>
+        <rules/>
+        <summary total="13" new="1" active="0" reviewed="12" approved="0" resolved="0">
+          <testtype>Hard</testtype>
+          <teststatus>Old</teststatus>
+        </summary>
+        <clashresults>
+          <clashgroup name="Canalisation" guid="8618d71a-df6a-48cf-b3ab-587c5665d3da" status="reviewed" distance="-0.017">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1369.050" y="-486.900" z="-1.891"/>
+            </clashpoint>
+            <gridlocation>AE 01-AE A : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>3537846</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_50_CFO_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Raccords de canalisation</node>
+                  <node>INGP_Acier_Union</node>
+                  <node>Acier_Union</node>
+                  <node>INGP_Acier_Union</node>
+                  <node>Acier_Union</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Acier_Union</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Raccords de canalisation</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>2333491</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Canalisation</node>
+                  <node>Canalisation</node>
+                  <node>INGP_Acier</node>
+                  <node>Canalisation</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Canalisation</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Canalisation: Canalisation: INGP_Acier</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit34" guid="0efe7155-0357-4cc3-b4d7-92c8b2277111" status="reviewed" distance="-0.017">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1369.050" y="-486.900" z="-1.891"/>
+                </clashpoint>
+                <gridlocation>AE 01-AE A : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>3537846</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_50_CFO_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Raccords de canalisation</node>
+                      <node>INGP_Acier_Union</node>
+                      <node>Acier_Union</node>
+                      <node>INGP_Acier_Union</node>
+                      <node>Acier_Union</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Acier_Union</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Raccords de canalisation</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>2333491</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Canalisation" guid="5efcbb39-f1d5-4134-94a5-94a2b2378873" status="reviewed" distance="-0.038">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1369.240" y="-490.191" z="-2.148"/>
+            </clashpoint>
+            <gridlocation>AE 01-AE Z : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>3535453</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_50_CFO_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_CFO_N_S_ASC</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_N_S_ASC</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>2020586</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Canalisation</node>
+                  <node>Canalisation</node>
+                  <node>INGP_Acier</node>
+                  <node>Canalisation</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Canalisation</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Canalisation: Canalisation: INGP_Acier</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit21" guid="efbe8780-6157-472a-96c8-ea119dd5945a" status="reviewed" distance="-0.038">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1369.240" y="-490.191" z="-2.148"/>
+                </clashpoint>
+                <gridlocation>AE 01-AE Z : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>3535453</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_50_CFO_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_CFO_N_S_ASC</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_N_S_ASC</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>2020586</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+              <clashresult name="Conflit27" guid="a60792c9-fef2-44fb-98d3-81cf16dc5687" status="reviewed" distance="-0.030">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1369.243" y="-490.185" z="-1.948"/>
+                </clashpoint>
+                <gridlocation>AE 01-AE Z : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>3390813</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_50_CFO_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_CFO_N_S_ASC</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_N_S_ASC</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>2020586</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Canalisation" guid="9e5f8653-b504-4316-999c-1efd4d0c062b" status="reviewed" distance="-0.036">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1376.215" y="-490.191" z="-2.151"/>
+            </clashpoint>
+            <gridlocation>AE 01-AE Z : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>3002432</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_50_CFO_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_CFO_N_S_ASC</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_N_S_ASC</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>2020618</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Canalisation</node>
+                  <node>Canalisation</node>
+                  <node>INGP_Acier</node>
+                  <node>Canalisation</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Canalisation</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Canalisation: Canalisation: INGP_Acier</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit22" guid="ffbc73b0-a58a-41b7-b93b-f466e74746a8" status="reviewed" distance="-0.036">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1376.215" y="-490.191" z="-2.151"/>
+                </clashpoint>
+                <gridlocation>AE 01-AE Z : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>3002432</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_50_CFO_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_CFO_N_S_ASC</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_N_S_ASC</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>2020618</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Canalisation" guid="943d042d-928b-4b0c-b858-c4a5ed0a3251" status="reviewed" distance="-0.098">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1435.735" y="-467.805" z="-2.540"/>
+            </clashpoint>
+            <gridlocation>AE 04-AE D : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>2999764</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_50_CFO_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>GAB_CFO_N_S_ASC</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: GAB_CFO_N_S_ASC</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>4095539</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Canalisation</node>
+                  <node>Canalisation</node>
+                  <node>INGP_Inox 316</node>
+                  <node>Canalisation</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Canalisation</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Canalisation: Canalisation: INGP_Inox 316</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit8" guid="74719c7c-a974-456d-9a72-76ebd7b28b9a" status="reviewed" distance="-0.098">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1435.735" y="-467.805" z="-2.540"/>
+                </clashpoint>
+                <gridlocation>AE 04-AE D : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>2999764</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_50_CFO_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>GAB_CFO_N_S_ASC</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: GAB_CFO_N_S_ASC</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>4095539</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Inox 316</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Inox 316</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Canalisation" guid="85823f5b-c16e-4800-87b5-fdcbcc3d67ba" status="reviewed" distance="-0.010">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1461.670" y="-480.380" z="-2.925"/>
+            </clashpoint>
+            <gridlocation>AE 06-AE B : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>2239039</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_50_CFO_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_CFO_PHOTO</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_PHOTO</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>4548920</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Canalisation</node>
+                  <node>Canalisation</node>
+                  <node>INGP_Acier</node>
+                  <node>Canalisation</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Canalisation</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Canalisation: Canalisation: INGP_Acier</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit38" guid="5f52bf42-3cd3-4110-af76-624ae87f4327" status="reviewed" distance="-0.010">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1461.670" y="-480.380" z="-2.925"/>
+                </clashpoint>
+                <gridlocation>AE 06-AE B : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>2239039</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_50_CFO_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_CFO_PHOTO</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_PHOTO</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>4548920</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Canalisation" guid="3162fe1d-505f-4483-9488-c5c95111b1af" status="reviewed" distance="-0.088">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1468.370" y="-468.052" z="-2.580"/>
+            </clashpoint>
+            <gridlocation>AE 06-AE D : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>2999764</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_50_CFO_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>GAB_CFO_N_S_ASC</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: GAB_CFO_N_S_ASC</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>3912026</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Canalisation</node>
+                  <node>Canalisation</node>
+                  <node>INGP_Inox 316</node>
+                  <node>Canalisation</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Canalisation</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Canalisation: Canalisation: INGP_Inox 316</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit17" guid="5068b49f-7256-41e2-a01e-b8813dc24ba8" status="reviewed" distance="-0.088">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1468.370" y="-468.052" z="-2.580"/>
+                </clashpoint>
+                <gridlocation>AE 06-AE D : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>2999764</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_50_CFO_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>GAB_CFO_N_S_ASC</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: GAB_CFO_N_S_ASC</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>3912026</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Inox 316</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Inox 316</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Canalisation" guid="e563796b-6535-427a-b1ec-6fe8d60c33a2" status="reviewed" distance="-0.030">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1509.470" y="-479.490" z="-3.088"/>
+            </clashpoint>
+            <gridlocation>AE 08-AE C : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="17" hour="7" minute="30" second="54"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>4536514</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_50_CFO_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_CFO_MT</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_MT</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>4554186</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Canalisation</node>
+                  <node>Canalisation</node>
+                  <node>INGP_Acier</node>
+                  <node>Canalisation</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Canalisation</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Canalisation: Canalisation: INGP_Acier</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit18" guid="eaa41033-5dfe-41ec-afe3-9ed22d3f856a" status="reviewed" distance="-0.030">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1509.470" y="-479.490" z="-3.088"/>
+                </clashpoint>
+                <gridlocation>AE 08-AE C : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="17" hour="7" minute="30" second="54"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>4536514</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_50_CFO_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_CFO_MT</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_MT</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>4554186</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+              <clashresult name="Conflit19" guid="99559ed8-871a-4ffb-8e8b-cfd6510d0664" status="reviewed" distance="-0.029">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1509.797" y="-479.488" z="-3.084"/>
+                </clashpoint>
+                <gridlocation>AE 08-AE C : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="17" hour="7" minute="30" second="54"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>3239938</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_50_CFO_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_CFO_MT</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_MT</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>4554186</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Canalisation" guid="0daa9e86-b936-408f-af80-a494312eea9b" status="reviewed" distance="-0.029">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1619.600" y="-479.789" z="-3.157"/>
+            </clashpoint>
+            <gridlocation>AE 14-AE C : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>1776658</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_50_CFO_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_CFO_MT</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_MT</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>2600463</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Canalisation</node>
+                  <node>Canalisation</node>
+                  <node>INGP_Acier</node>
+                  <node>Canalisation</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Canalisation</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Canalisation: Canalisation: INGP_Acier</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit28" guid="8c4ebdf7-3981-44bc-8a56-b1141760d7ff" status="reviewed" distance="-0.029">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1619.600" y="-479.789" z="-3.157"/>
+                </clashpoint>
+                <gridlocation>AE 14-AE C : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>1776658</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_50_CFO_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_CFO_MT</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_MT</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>2600463</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Coude 3D" guid="a470f82f-52a8-4938-87f6-4b772cc3f585" status="reviewed" distance="-0.027">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1619.424" y="-479.745" z="-3.159"/>
+            </clashpoint>
+            <gridlocation>AE 14-AE C : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>1776658</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_50_CFO_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_CFO_MT</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_MT</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>2600513</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Raccords de canalisation</node>
+                  <node>Coude 3D</node>
+                  <node>Acier</node>
+                  <node>Coude 3D</node>
+                  <node>Acier</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Acier</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Raccords de canalisation</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit29" guid="8aa1bc84-51e7-439f-b569-e8fd91ee7946" status="reviewed" distance="-0.027">
+                <parentgroup>Coude 3D</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1619.424" y="-479.745" z="-3.159"/>
+                </clashpoint>
+                <gridlocation>AE 14-AE C : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>1776658</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_50_CFO_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_CFO_MT</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_MT</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>2600513</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Raccords de canalisation</node>
+                      <node>Coude 3D</node>
+                      <node>Acier</node>
+                      <node>Coude 3D</node>
+                      <node>Acier</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Acier</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Raccords de canalisation</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Canalisation" guid="2d27c475-3b5a-4b91-8e32-496d89b7a5a4" status="reviewed" distance="-0.027">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1619.424" y="-479.762" z="-3.159"/>
+            </clashpoint>
+            <gridlocation>AE 14-AE C : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>1776658</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_50_CFO_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_CFO_MT</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_MT</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>1533120</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Canalisation</node>
+                  <node>Canalisation</node>
+                  <node>INGP_Acier</node>
+                  <node>Canalisation</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Canalisation</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Canalisation: Canalisation: INGP_Acier</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit31" guid="efdf91f7-8775-4ecf-8792-3f5230ffb78b" status="reviewed" distance="-0.024">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1600.411" y="-479.808" z="-3.135"/>
+                </clashpoint>
+                <gridlocation>AE 13-AE C : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>1787205</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_50_CFO_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Raccords de chemins de câbles</node>
+                      <node>Chemin de cables - Courbure</node>
+                      <node>CDC_CFO_MT</node>
+                      <node>Chemin de cables - Courbure</node>
+                      <node>CDC_CFO_MT</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>CDC_CFO_MT</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Raccords de chemins de câbles</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>1533120</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+              <clashresult name="Conflit30" guid="4921f82f-ae51-4cf8-8c70-5b4c68449e4b" status="reviewed" distance="-0.027">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1619.424" y="-479.762" z="-3.159"/>
+                </clashpoint>
+                <gridlocation>AE 14-AE C : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>1776658</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_50_CFO_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_CFO_MT</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_MT</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>1533120</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Canalisation" guid="3b1b968a-c73f-40fe-ae0f-399a69cbfaea" status="reviewed" distance="-0.012">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1632.313" y="-468.722" z="-2.285"/>
+            </clashpoint>
+            <gridlocation>AE 14-AE D : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>3853244</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_50_CFO_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Raccords de chemins de câbles</node>
+                  <node>Chemin de cables - Courbure convexe</node>
+                  <node>GAB_CFO_N_S_ASC</node>
+                  <node>Chemin de cables - Courbure convexe</node>
+                  <node>GAB_CFO_N_S_ASC</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>GAB_CFO_N_S_ASC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Raccords de chemins de câbles</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>1618080</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Canalisation</node>
+                  <node>Canalisation</node>
+                  <node>INGP_Acier</node>
+                  <node>Canalisation</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Canalisation</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Canalisation: Canalisation: INGP_Acier</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit35" guid="e326d4cb-762d-4421-89ab-52f49c7b829a" status="reviewed" distance="-0.012">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1632.313" y="-468.722" z="-2.285"/>
+                </clashpoint>
+                <gridlocation>AE 14-AE D : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>3853244</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_50_CFO_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Raccords de chemins de câbles</node>
+                      <node>Chemin de cables - Courbure convexe</node>
+                      <node>GAB_CFO_N_S_ASC</node>
+                      <node>Chemin de cables - Courbure convexe</node>
+                      <node>GAB_CFO_N_S_ASC</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>GAB_CFO_N_S_ASC</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Raccords de chemins de câbles</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>1618080</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Te" guid="e637d6a2-d338-4092-bbab-8853795536f8" status="reviewed" distance="-0.012">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="1632.560" y="-468.722" z="-2.285"/>
+            </clashpoint>
+            <gridlocation>AE 14-AE D : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>3853244</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_50_CFO_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Raccords de chemins de câbles</node>
+                  <node>Chemin de cables - Courbure convexe</node>
+                  <node>GAB_CFO_N_S_ASC</node>
+                  <node>Chemin de cables - Courbure convexe</node>
+                  <node>GAB_CFO_N_S_ASC</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>GAB_CFO_N_S_ASC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Raccords de chemins de câbles</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>1618057</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Raccords de canalisation</node>
+                  <node>INGP_Acier_Te</node>
+                  <node>Acier_Te</node>
+                  <node>INGP_Acier_Te</node>
+                  <node>Acier_Te</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Acier_Te</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Raccords de canalisation</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit36" guid="9bcc05c1-8fad-424f-96e9-9447aefe4211" status="reviewed" distance="-0.012">
+                <parentgroup>Te</parentgroup>
+                <description>Hard</description>
+                <resultstatus>Reviewed</resultstatus>
+                <clashpoint>
+                  <pos3f x="1632.560" y="-468.722" z="-2.285"/>
+                </clashpoint>
+                <gridlocation>AE 14-AE D : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>3853244</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_50_CFO_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Raccords de chemins de câbles</node>
+                      <node>Chemin de cables - Courbure convexe</node>
+                      <node>GAB_CFO_N_S_ASC</node>
+                      <node>Chemin de cables - Courbure convexe</node>
+                      <node>GAB_CFO_N_S_ASC</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>GAB_CFO_N_S_ASC</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Raccords de chemins de câbles</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>1618057</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Raccords de canalisation</node>
+                      <node>INGP_Acier_Te</node>
+                      <node>Acier_Te</node>
+                      <node>INGP_Acier_Te</node>
+                      <node>Acier_Te</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Acier_Te</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Raccords de canalisation</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+          <clashgroup name="Canalisation" guid="e0e267d9-7040-47f5-8314-a3b22ee33507" status="new" distance="-0.031">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="1869.740" y="-480.460" z="-2.221"/>
+            </clashpoint>
+            <gridlocation>AE 26-AE B : 85 - NIVEAU PROCESSEUR</gridlocation>
+            <createddate>
+              <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>1491882</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_50_CFO_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Chemins de câbles</node>
+                  <node>Chemin de câbles avec raccords</node>
+                  <node>CDC_CFO_MT</node>
+                  <node>Chemin de câbles avec raccords</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Chemin de câbles avec raccords</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_MT</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>ID d&apos;élément</name>
+                  <value>927734</value>
+                </objectattribute>
+                <layer>85 - NIVEAU LT</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>AIG_35_SPK_INFRA.nwc</node>
+                  <node>85 - NIVEAU LT</node>
+                  <node>Canalisation</node>
+                  <node>Canalisation</node>
+                  <node>INGP_Acier</node>
+                  <node>Canalisation</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Canalisation</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Canalisation: Canalisation: INGP_Acier</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <clashresults>
+              <clashresult name="Conflit26" guid="f925e87a-f087-4bb9-b49d-e2851fa6c09b" status="new" distance="-0.031">
+                <parentgroup>Canalisation</parentgroup>
+                <description>Hard</description>
+                <resultstatus>New</resultstatus>
+                <clashpoint>
+                  <pos3f x="1869.740" y="-480.460" z="-2.221"/>
+                </clashpoint>
+                <gridlocation>AE 26-AE B : 85 - NIVEAU PROCESSEUR</gridlocation>
+                <createddate>
+                  <date year="2015" month="7" day="16" hour="15" minute="6" second="53"/>
+                </createddate>
+                <clashobjects>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>1491882</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_50_CFO_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Chemins de câbles</node>
+                      <node>Chemin de câbles avec raccords</node>
+                      <node>CDC_CFO_MT</node>
+                      <node>Chemin de câbles avec raccords</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Chemin de câbles avec raccords</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Chemins de câbles: Chemin de câbles avec raccords: CDC_CFO_MT</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                  <clashobject>
+                    <objectattribute>
+                      <name>ID d&apos;élément</name>
+                      <value>927734</value>
+                    </objectattribute>
+                    <layer>85 - NIVEAU LT</layer>
+                    <pathlink>
+                      <node>File</node>
+                      <node>File</node>
+                      <node>AIG_35_SPK_INFRA.nwc</node>
+                      <node>85 - NIVEAU LT</node>
+                      <node>Canalisation</node>
+                      <node>Canalisation</node>
+                      <node>INGP_Acier</node>
+                      <node>Canalisation</node>
+                    </pathlink>
+                    <smarttags>
+                      <smarttag>
+                        <name>Item Name</name>
+                        <value>Canalisation</value>
+                      </smarttag>
+                      <smarttag>
+                        <name>Item Type</name>
+                        <value>Canalisation: Canalisation: INGP_Acier</value>
+                      </smarttag>
+                    </smarttags>
+                  </clashobject>
+                </clashobjects>
+              </clashresult>
+            </clashresults>
+          </clashgroup>
+        </clashresults>
+      </clashtest>
+    </clashtests>
+    <selectionsets/>
+  </batchtest>
+</exchange>
