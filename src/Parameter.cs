@@ -58,12 +58,7 @@ namespace ClashLogger
     {
         public AvailableParameters()
         {
-            this.Add(new Parameter("Param1"));
-            this.Add(new Parameter("Param2"));
-            this.Add(new Parameter("Param3"));
-            this.Add(new Parameter("Param4"));
-            this.Add(new Parameter("Param5"));
-            this.Add(new Parameter("Param6"));
+
         }
     }
 

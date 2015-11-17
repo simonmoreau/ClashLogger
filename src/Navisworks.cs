@@ -226,7 +226,6 @@ namespace ClashLogger.Navisworks
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
     public partial class clashtest
     {
-
         private linkage linkageField;
 
         private string customtypeField;
@@ -326,6 +325,10 @@ namespace ClashLogger.Navisworks
                 this.leftField = value;
             }
         }
+        public string TestLeftMember
+        {
+            get { return leftField.ToString(); }
+        }
 
         [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 4)]
         public clashselectionType right
@@ -338,6 +341,10 @@ namespace ClashLogger.Navisworks
             {
                 this.rightField = value;
             }
+        }
+        public string TestRightMember
+        {
+            get { return rightField.ToString(); }
         }
 
         [System.Xml.Serialization.XmlArrayAttribute(Order = 5)]
@@ -382,8 +389,8 @@ namespace ClashLogger.Navisworks
             }
         }
 
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string name
+        [System.Xml.Serialization.XmlAttributeAttribute("name")]
+        public string TestName
         {
             get
             {
@@ -395,8 +402,8 @@ namespace ClashLogger.Navisworks
             }
         }
 
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string guid
+        [System.Xml.Serialization.XmlAttributeAttribute("guid")]
+        public string GUID
         {
             get
             {
@@ -419,6 +426,10 @@ namespace ClashLogger.Navisworks
             {
                 this.test_typeField = value;
             }
+        }
+        public string TestType
+        {
+            get { return test_typeField.ToString(); }
         }
 
         [System.Xml.Serialization.XmlIgnoreAttribute()]
@@ -446,6 +457,10 @@ namespace ClashLogger.Navisworks
                 this.statusField = value;
             }
         }
+        public string TestStatus
+        {
+            get { return statusField.ToString(); }
+        }
 
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool statusSpecified
@@ -460,8 +475,8 @@ namespace ClashLogger.Navisworks
             }
         }
 
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public float tolerance
+        [System.Xml.Serialization.XmlAttributeAttribute("tolerance")]
+        public float TestTolerance
         {
             get
             {
@@ -486,8 +501,8 @@ namespace ClashLogger.Navisworks
             }
         }
 
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer")]
-        public string merge_composites
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "integer", AttributeName = "merge_composites")]
+        public string TestMerge_Composites
         {
             get
             {
@@ -709,7 +724,15 @@ namespace ClashLogger.Navisworks
                 int hourint = Convert.ToInt32(this.hour);
                 int minint = Convert.ToInt32(this.minute);
                 int secint = Convert.ToInt32(this.second);
-                return new DateTime(yearint, monthint, dayint, hourint, minint, secint);
+                if (yearint != 0 && monthint != 0 && dayint != 0)
+                {
+                    return new DateTime(yearint, monthint, dayint, hourint, minint, secint);
+                }
+                else
+                {
+                    return new DateTime();
+                }
+                
             }
         }
 
@@ -852,6 +875,17 @@ namespace ClashLogger.Navisworks
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = true)]
     public partial class clashselectionType
     {
+        public override string ToString()
+        {
+            if (clashselectionField != null)
+            {
+                return clashselectionField.ToString();
+            }
+            else
+            {
+                return null;
+            }
+        }
 
         private clashselectionTypeClashselection clashselectionField;
 
@@ -883,6 +917,18 @@ namespace ClashLogger.Navisworks
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     public partial class clashselectionTypeClashselection
     {
+        public override string ToString()
+        {
+            if (this.locatorField != null)
+            {
+                return this.locatorField.Substring(this.locatorField.IndexOf('/'));
+            }
+            else
+            {
+                return null;
+            }
+            
+        }
 
         private string locatorField;
 
@@ -1350,7 +1396,6 @@ namespace ClashLogger.Navisworks
     [System.Xml.Serialization.XmlRootAttribute("createddate", Namespace = "", IsNullable = false)]
     public partial class dateType
     {
-
         private date dateField;
 
         /// <summary>
@@ -1651,6 +1696,18 @@ namespace ClashLogger.Navisworks
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = true)]
     public partial class position3fType
     {
+        public override string ToString()
+        {
+            if (pos3fField != null)
+            {
+                return pos3fField.ToString();
+            }
+            else
+            {
+                return null;
+            }
+            
+        }
 
         private pos3f pos3fField;
 
@@ -1683,6 +1740,24 @@ namespace ClashLogger.Navisworks
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
     public partial class pos3f
     {
+        public override string ToString()
+        {
+            if (xField != null && yField != null && zField != null)
+            {
+                float x, y, z;
+                if (xFieldSpecified) x = xField; else x = 0;
+                if (yFieldSpecified) y = yField; else y = 0;
+                if (zFieldSpecified) z = zField; else z = 0;
+
+                return x.ToString() + " - " + y.ToString() + " - " + z.ToString();
+            }
+            else
+            {
+                return null;
+            }
+
+
+        }
 
         private float xField;
 
@@ -2750,8 +2825,8 @@ namespace ClashLogger.Navisworks
             this.clashpointField = new position3fType();
         }
 
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 0)]
-        public string description
+        [System.Xml.Serialization.XmlElementAttribute(ElementName = "description", Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 0)]
+        public string GroupDescription
         {
             get
             {
@@ -2763,8 +2838,8 @@ namespace ClashLogger.Navisworks
             }
         }
 
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 1)]
-        public string resultstatus
+        [System.Xml.Serialization.XmlElementAttribute(ElementName = "resultstatus", Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 1)]
+        public string GroupResultStatus
         {
             get
             {
@@ -2788,9 +2863,13 @@ namespace ClashLogger.Navisworks
                 this.clashpointField = value;
             }
         }
+        public string GroupPoint
+        {
+            get { return clashpointField.ToString(); }
+        }
 
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 3)]
-        public string gridlocation
+        [System.Xml.Serialization.XmlElementAttribute(ElementName = "gridlocation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 3)]
+        public string GroupGridLocation
         {
             get
             {
@@ -2814,6 +2893,10 @@ namespace ClashLogger.Navisworks
                 this.approveddateField = value;
             }
         }
+        public DateTime GroupApprovedDate
+        {
+            get { return approveddateField.date.Date; }
+        }
 
         [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public dateType createddate
@@ -2827,9 +2910,13 @@ namespace ClashLogger.Navisworks
                 this.createddateField = value;
             }
         }
+        public DateTime GroupCreationDate
+        {
+            get { return createddateField.date.Date; }
+        }
 
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 6)]
-        public string approvedby
+        [System.Xml.Serialization.XmlElementAttribute(ElementName = "approvedby", Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 6)]
+        public string GroupApprovedBy
         {
             get
             {
@@ -2897,8 +2984,8 @@ namespace ClashLogger.Navisworks
             }
         }
 
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string href
+        [System.Xml.Serialization.XmlAttributeAttribute(AttributeName = "href")]
+        public string GroupHref
         {
             get
             {
@@ -2910,8 +2997,8 @@ namespace ClashLogger.Navisworks
             }
         }
 
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string name
+        [System.Xml.Serialization.XmlAttributeAttribute(AttributeName = "name")]
+        public string GroupName
         {
             get
             {
@@ -2923,8 +3010,8 @@ namespace ClashLogger.Navisworks
             }
         }
 
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string guid
+        [System.Xml.Serialization.XmlAttributeAttribute(AttributeName = "guid")]
+        public string GroupGUID
         {
             get
             {
@@ -2948,6 +3035,10 @@ namespace ClashLogger.Navisworks
                 this.statusField = value;
             }
         }
+        public string GroupStatus
+        {
+            get { return statusField.ToString(); }
+        }
 
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool statusSpecified
@@ -2962,8 +3053,8 @@ namespace ClashLogger.Navisworks
             }
         }
 
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public float distance
+        [System.Xml.Serialization.XmlAttributeAttribute(AttributeName = "distance")]
+        public float GroupDistance
         {
             get
             {
@@ -3130,8 +3221,8 @@ namespace ClashLogger.Navisworks
             this.clashpointField = new position3fType();
         }
 
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 0)]
-        public string parentgroup
+        [System.Xml.Serialization.XmlElementAttribute(ElementName = "parentgroup", Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 0)]
+        public string ClashParentGroup
         {
             get
             {
@@ -3143,8 +3234,8 @@ namespace ClashLogger.Navisworks
             }
         }
 
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 1)]
-        public string description
+        [System.Xml.Serialization.XmlElementAttribute(ElementName = "description", Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 1)]
+        public string ClashDescription
         {
             get
             {
@@ -3156,8 +3247,8 @@ namespace ClashLogger.Navisworks
             }
         }
 
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 2)]
-        public string resultstatus
+        [System.Xml.Serialization.XmlElementAttribute(ElementName = "resultstatus", Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 2)]
+        public string ClashStatus
         {
             get
             {
@@ -3181,6 +3272,10 @@ namespace ClashLogger.Navisworks
                 this.clashpointField = value;
             }
         }
+        public string ClashPoint
+        {
+            get { return clashpointField.ToString(); }
+        }
 
         [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 4)]
         public dateType approveddate
@@ -3194,9 +3289,13 @@ namespace ClashLogger.Navisworks
                 this.approveddateField = value;
             }
         }
+        public DateTime ClashApprovedDate
+        {
+            get { return approveddateField.date.Date; }
+        }
 
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 5)]
-        public string gridlocation
+        [System.Xml.Serialization.XmlElementAttribute(ElementName = "gridlocation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 5)]
+        public string ClashGridLocation
         {
             get
             {
@@ -3220,9 +3319,13 @@ namespace ClashLogger.Navisworks
                 this.createddateField = value;
             }
         }
+        public DateTime ClashCreatedDate
+        {
+            get { return createddateField.date.Date; }
+        }
 
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 7)]
-        public string approvedby
+        [System.Xml.Serialization.XmlElementAttribute(ElementName = "approvedby", Form = System.Xml.Schema.XmlSchemaForm.Unqualified, Order = 7)]
+        public string ClashApprovedBy
         {
             get
             {
@@ -3275,8 +3378,8 @@ namespace ClashLogger.Navisworks
             }
         }
 
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string href
+        [System.Xml.Serialization.XmlAttributeAttribute(AttributeName = "href")]
+        public string ClashHref
         {
             get
             {
@@ -3288,8 +3391,8 @@ namespace ClashLogger.Navisworks
             }
         }
 
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string name
+        [System.Xml.Serialization.XmlAttributeAttribute(AttributeName = "name")]
+        public string ClashName
         {
             get
             {
@@ -3301,8 +3404,8 @@ namespace ClashLogger.Navisworks
             }
         }
 
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string guid
+        [System.Xml.Serialization.XmlAttributeAttribute(AttributeName = "guid")]
+        public string ClashGUID
         {
             get
             {
@@ -3326,6 +3429,10 @@ namespace ClashLogger.Navisworks
                 this.statusField = value;
             }
         }
+        public string ClashResultType
+        {
+            get { return statusField.ToString(); }
+        }
 
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool statusSpecified
@@ -3340,8 +3447,8 @@ namespace ClashLogger.Navisworks
             }
         }
 
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public float distance
+        [System.Xml.Serialization.XmlAttributeAttribute(AttributeName = "distance")]
+        public float ClashDistance
         {
             get
             {
@@ -3494,7 +3601,6 @@ namespace ClashLogger.Navisworks
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
     public enum clashtesttypeType
     {
-
         /// <remarks/>
         hard,
 

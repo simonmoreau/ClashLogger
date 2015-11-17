@@ -36,7 +36,13 @@ namespace ClashLogger
 
         private void Ok_Button_Click(object sender, RoutedEventArgs e)
         {
+            selectedParameters = (SelectedParameters)RightParamListBox.DataContext;
+            reports = (ClashReports)reportsListBox.DataContext;
 
+            if (selectedParameters.Count != 0)
+            {
+                reports.WriteToFile(selectedParameters);
+            }
         }
 
         private void Cancel_Button_Click(object sender, RoutedEventArgs e)
@@ -47,10 +53,25 @@ namespace ClashLogger
         private void addReport_Click(object sender, RoutedEventArgs e)
         {
             reports = (ClashReports)reportsListBox.DataContext;
+
             if (reports == null)
                 return;
 
             reports.Add();
+
+            availableParameters = (AvailableParameters)LeftParamListBox.DataContext;
+
+            if (reports.Parameters.Count != 0)
+            {
+                foreach (Parameter param in reports.Parameters)
+                {
+                    if (!selectedParameters.Contains(param) && !availableParameters.Contains(param))
+                    {
+                        availableParameters.Add(param);
+                    }
+                }
+            }
+
         }
 
         private void removeReport_Click(object sender, RoutedEventArgs e)

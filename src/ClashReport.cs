@@ -17,27 +17,27 @@ namespace ClashLogger
     {
         private FileInfo fileInfo;
         public FileInfo FileInfo
-        { 
-            get { return fileInfo; } 
-            set { fileInfo = value; } 
+        {
+            get { return fileInfo; }
+            set { fileInfo = value; }
         }
 
-        private string name;
-        public string Name
+        private string reportName;
+        public string ReportName
         {
-            get { return name; }
+            get { return reportName; }
         }
 
-        private DateTime creationDate;
-        public DateTime CreationTime
+        private DateTime reportCreationDate;
+        public DateTime ReportCreationTime
         {
-            get { return creationDate; }
+            get { return reportCreationDate; }
         }
 
-        private DateTime modificationDate;
-        public DateTime ModificationDate
+        private DateTime reportModificationDate;
+        public DateTime ReportModificationDate
         {
-            get { return modificationDate; }
+            get { return reportModificationDate; }
         }
 
         private Navisworks.batchtest batchtest;
@@ -49,15 +49,18 @@ namespace ClashLogger
         public ClashReport(FileInfo file)
         {
             fileInfo = file;
-            name = file.Name;
-            creationDate = file.CreationTime;
-            modificationDate = file.LastWriteTime;
+            reportName = file.Name;
+            reportCreationDate = file.CreationTime;
+            reportModificationDate = file.LastWriteTime;
             batchtest = ReadReport(file.FullName);
-            parameters = AddParameters(this);
+            if (batchtest != null)
+            {
+                parameters = AddParameters(this);
+            }
         }
 
-        public List<Parameter> parameters;
-        private List<Parameter> Parameters
+        private List<Parameter> parameters;
+        public List<Parameter> Parameters
         {
             get { return parameters; }
         }
@@ -70,10 +73,11 @@ namespace ClashLogger
             Navisworks.clashresult clashresult = clashtest.clashresults.FirstOrDefault(item => item.GetType() == typeof(clashresult)) as clashresult;
             Navisworks.clashgroup clashgroup = clashtest.clashresults.FirstOrDefault(item => item.GetType() == typeof(clashgroup)) as clashgroup;
 
+            parameters.AddRange(loadParameters(report));
             parameters.AddRange(loadParameters(clashtest));
             parameters.AddRange(loadParameters(clashresult));
             parameters.AddRange(loadParameters(clashgroup));
-            
+
             return parameters;
         }
 
@@ -87,13 +91,27 @@ namespace ClashLogger
 
                 foreach (PropertyInfo propertyInfo in objectType.GetProperties())
                 {
-                    //If the property is already added to the availableParameters, do not add
-                    if (!parameters.Any(item => item.Name == propertyInfo.Name))
+                    //Add only parameters of a specific type (string, dateandtime, double, int, ...)
+                    if (propertyInfo.PropertyType == typeof(int)
+                        || propertyInfo.PropertyType == typeof(string)
+                        || propertyInfo.PropertyType == typeof(DateTime)
+                        || propertyInfo.PropertyType == typeof(double)
+                        || propertyInfo.PropertyType == typeof(float)
+                        || propertyInfo.PropertyType == typeof(bool))
                     {
-                        //Check if the value is not null
-                        if (propertyInfo.GetValue(obj) != null)
+                        //add the property if it come from the xml
+                        object[] attribs = propertyInfo.GetCustomAttributes(typeof(XmlIgnoreAttribute), false);
+                        if (attribs.Length == 0)
                         {
-                            parameters.Add(new Parameter(propertyInfo.Name));
+                            //If the property is already added to the availableParameters, do not add
+                            if (!parameters.Any(item => item.Name == propertyInfo.Name))
+                            {
+                                //Check if the value is not null
+                                if (propertyInfo.GetValue(obj) != null)
+                                {
+                                    parameters.Add(new Parameter(propertyInfo.Name));
+                                }
+                            }
                         }
                     }
                 }
@@ -119,9 +137,12 @@ namespace ClashLogger
                         exchange = (Navisworks.exchange)serializer.Deserialize(reader);
                     }
                 }
+
+
             }
-            catch
+            catch (Exception ex)
             {
+                System.Diagnostics.Debug.WriteLine(fileName + ex.Message);
                 return null;
             }
 
@@ -135,7 +156,7 @@ namespace ClashLogger
     {
         public ClashReports()
         {
-
+            parameters = new Parameters();
         }
 
         public void Add()
@@ -153,7 +174,23 @@ namespace ClashLogger
                     {
                         ClashReport newClashReport = new ClashReport(new FileInfo(filename));
                         this.Add(newClashReport);
+                        if (newClashReport.Batchtest != null)
+                        {
+                            this.AddParameters(newClashReport);
+                        }
                     }
+                }
+            }
+        }
+
+        private void AddParameters(ClashReport newClashReport)
+        {
+
+            foreach (Parameter param in newClashReport.Parameters)
+            {
+                if (!parameters.Any(item => item.Name == param.Name))
+                {
+                    parameters.Add(param);
                 }
             }
         }
@@ -169,18 +206,116 @@ namespace ClashLogger
                     selectedReports.Add(report);
                 }
             }
-
-
+            //TODO
+            //Remove unused parameters
             foreach (ClashReport report in selectedReports)
             {
                 this.Remove(report);
             }
         }
 
-        private AvailableParameters availableParameters;
-        public AvailableParameters AvailableParameters
+        public void WriteToFile(System.Collections.IList selectedParameters)
         {
-            get { return availableParameters; }
+            List<string> lines = new List<string>();
+
+            string firstRow = "";
+            foreach (Parameter selectedParameter in selectedParameters)
+            {
+                firstRow = firstRow + ";" + selectedParameter.Name;
+            }
+            lines.Add(firstRow);
+
+            foreach (ClashReport report in this)
+            {
+                if (report.Batchtest != null)
+                {
+                    foreach (Navisworks.clashtest clashtest in report.Batchtest.clashtests)
+                    {
+                        foreach (object obj in clashtest.clashresults)
+                        {
+                            object objGroup = new clashgroup();
+                            object objResult = new clashresult();
+
+                            if (obj.GetType() == typeof(clashgroup))
+                            {
+                                objGroup = obj;
+                                objResult = null;
+                            }
+                            else
+                            {
+                                objResult = obj;
+                                objGroup = null;
+                            }
+
+                            lines.Add(
+                                GetValuesAsString(report, typeof(ClashReport), selectedParameters) +
+                                GetValuesAsString(clashtest, typeof(clashtest), selectedParameters) +
+                                GetValuesAsString(objGroup, typeof(clashgroup), selectedParameters) +
+                                GetValuesAsString(objResult, typeof(clashresult), selectedParameters)
+                                );
+                        }
+                    }
+                }
+            }
+
+            string path = "";
+            SaveFileDialog saveDialog = new SaveFileDialog();
+            saveDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            saveDialog.Filter = "Csv files (*.csv)|*.csv|All files (*.*)|*.*";
+            saveDialog.AddExtension = true;
+            saveDialog.DefaultExt = "csv";
+
+            if (saveDialog.ShowDialog() == true)
+            {
+                path = saveDialog.FileName;
+                File.WriteAllLines(path, lines.ToArray());
+            }
+
+        }
+
+        private string GetValuesAsString(object obj, Type type, System.Collections.IList selectedParameters)
+        {
+            string returnValue = "";
+            PropertyInfo[] propertiesInfo = type.GetProperties();
+
+            if (obj != null)
+            {
+                foreach (Parameter selectedParameter in selectedParameters)
+                {
+                    if (propertiesInfo.Any(item => item.Name == selectedParameter.Name))
+                    {
+                        PropertyInfo propertyInfo = type.GetProperty(selectedParameter.Name);
+
+                        //Check if the value is not null
+                        if (propertyInfo.GetValue(obj) != null)
+                        {
+                            returnValue = returnValue + ";" + propertyInfo.GetValue(obj).ToString();
+                        }
+                        else
+                        {
+                            returnValue = returnValue + ";";
+                        }
+                    }
+                }
+            }
+            else
+            {
+                foreach (Parameter selectedParameter in selectedParameters)
+                {
+                    if (propertiesInfo.Any(item => item.Name == selectedParameter.Name))
+                    {
+                        returnValue = returnValue + ";";
+                    }
+                }
+            }
+
+            return returnValue;
+        }
+
+        private Parameters parameters;
+        public Parameters Parameters
+        {
+            get { return parameters; }
         }
 
     }
