@@ -109,7 +109,7 @@ namespace ClashLogger
                                 //Check if the value is not null
                                 if (propertyInfo.GetValue(obj) != null)
                                 {
-                                    parameters.Add(new Parameter(propertyInfo.Name));
+                                    parameters.Add(new Parameter(propertyInfo.Name,obj.GetType()));
                                 }
                             }
                         }
@@ -137,7 +137,6 @@ namespace ClashLogger
                         exchange = (Navisworks.exchange)serializer.Deserialize(reader);
                     }
                 }
-
 
             }
             catch (Exception ex)
@@ -233,26 +232,28 @@ namespace ClashLogger
                     {
                         foreach (object obj in clashtest.clashresults)
                         {
-                            object objGroup = new clashgroup();
-                            object objResult = new clashresult();
-
-                            if (obj.GetType() == typeof(clashgroup))
+                            string row = "";
+                            foreach (Parameter selectedParameter in selectedParameters)
                             {
-                                objGroup = obj;
-                                objResult = null;
+                                if (selectedParameter.AssociatedType == typeof(ClashReport))
+                                {
+                                    row = row + ";" + GetValuesAsString(report,selectedParameter.AssociatedType, selectedParameter);
+                                }
+                                else if (selectedParameter.AssociatedType == typeof(Navisworks.clashtest))
+                                {
+                                    row = row + ";" + GetValuesAsString(clashtest, selectedParameter.AssociatedType, selectedParameter);
+                                }
+                                else if (selectedParameter.AssociatedType == typeof(Navisworks.clashresult))
+                                {
+                                    row = row + ";" + GetValuesAsString(obj as Navisworks.clashresult, selectedParameter.AssociatedType, selectedParameter);
+                                }
+                                else if (selectedParameter.AssociatedType == typeof(Navisworks.clashgroup))
+                                {
+                                    row = row + ";" + GetValuesAsString(obj as Navisworks.clashgroup, selectedParameter.AssociatedType, selectedParameter);
+                                }
+                                
                             }
-                            else
-                            {
-                                objResult = obj;
-                                objGroup = null;
-                            }
-
-                            lines.Add(
-                                GetValuesAsString(report, typeof(ClashReport), selectedParameters) +
-                                GetValuesAsString(clashtest, typeof(clashtest), selectedParameters) +
-                                GetValuesAsString(objGroup, typeof(clashgroup), selectedParameters) +
-                                GetValuesAsString(objResult, typeof(clashresult), selectedParameters)
-                                );
+                            lines.Add(row);
                         }
                     }
                 }
@@ -273,39 +274,33 @@ namespace ClashLogger
 
         }
 
-        private string GetValuesAsString(object obj, Type type, System.Collections.IList selectedParameters)
+        private string GetValuesAsString(object obj, Type type, Parameter selectedParameter)
         {
             string returnValue = "";
             PropertyInfo[] propertiesInfo = type.GetProperties();
 
             if (obj != null)
             {
-                foreach (Parameter selectedParameter in selectedParameters)
+                if (propertiesInfo.Any(item => item.Name == selectedParameter.Name))
                 {
-                    if (propertiesInfo.Any(item => item.Name == selectedParameter.Name))
-                    {
-                        PropertyInfo propertyInfo = type.GetProperty(selectedParameter.Name);
+                    PropertyInfo propertyInfo = type.GetProperty(selectedParameter.Name);
 
-                        //Check if the value is not null
-                        if (propertyInfo.GetValue(obj) != null)
-                        {
-                            returnValue = returnValue + ";" + propertyInfo.GetValue(obj).ToString();
-                        }
-                        else
-                        {
-                            returnValue = returnValue + ";";
-                        }
+                    //Check if the value is not null
+                    if (propertyInfo.GetValue(obj) != null)
+                    {
+                        returnValue = propertyInfo.GetValue(obj).ToString();
+                    }
+                    else
+                    {
+                        returnValue = "";
                     }
                 }
             }
             else
             {
-                foreach (Parameter selectedParameter in selectedParameters)
+                if (propertiesInfo.Any(item => item.Name == selectedParameter.Name))
                 {
-                    if (propertiesInfo.Any(item => item.Name == selectedParameter.Name))
-                    {
-                        returnValue = returnValue + ";";
-                    }
+                    returnValue = "";
                 }
             }
 

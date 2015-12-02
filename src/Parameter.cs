@@ -16,10 +16,19 @@ namespace ClashLogger
             get { return name; }
         }
 
-        public Parameter(string _name)
+        private Type associatedType;
+        public Type AssociatedType
+        {
+            get { return associatedType; }
+        }
+
+        public Parameter(string _name, Type _associatedType)
         {
             name = _name;
+            associatedType = _associatedType;
         }
+
+        
     }
 
     public class Parameters : ObservableCollection<Parameter>
